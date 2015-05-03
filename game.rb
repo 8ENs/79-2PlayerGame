@@ -121,7 +121,7 @@ elsif Player.count == 1
 else
   play
   while play_again? 
-    for i in 0..2 #(Player.count - 1)
+    for i in 0..(Player.count - 1)
       @players[i].life_reset
     end
     play
